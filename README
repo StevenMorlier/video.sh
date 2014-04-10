@@ -1,1 +1,19 @@
 Hello World :D
+
+Voici le premier repository,
+il concerne la création d'un systeme de lectures de videos à distance avec des Rpi.
+
+Nous avons commencé par analyser le fonctionnement du fichier /etc/network/interface afin de configurer un Rpi en réseau.
+Puis nous avons créés un fichier video.sh destiné à demander au Rpi de lire des vidéo avec Omxplayer en fonction d'une boucle.
+ce fichier sera bientôt rattaché à un fichier videolist.sh destiné à synchroniser les répertoires vidéo avec un serveur distant
+puis de créer des listes de lectures.
+
+ce fichier videolist.sh sera implémenté dans /etc/rc.local afin de démarrer automatiquement au lancement du Rpi
+
+Liste de fichiers concernés : 
+
+
+/home/pi/videosh/video.sh : lecture en boucle d'une playslist
+/home/pi/videosh/playrand : la liste concernée
+/home/pi/videosh/videolist.sh : le créateur de la playlist
+/home/pi/videosh/videosh/lecture/ : répertoire contenant les vidéos // musiques // photos
